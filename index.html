@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THREEJS Boilerplate</title>
+  <style>
+    :root{
+      background-color: black;
+      overflow: hidden;
+    }
+    body {
+      margin: 0;
+      overflow: inherit;
+    }
+
+    canvas {
+      position: fixed;
+      inset: 0;
+      background-color: inherit;
+      height: 100%;
+    }
+
+    #portal{
+      position:fixed;
+      inset:0;
+      height: 100%;
+      background-color: transparent;
+      pointer-events: none;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="portal" data-has-window="false" data-has-assets="false" data-has-error="false"></div>
+  <script src="./src/index.js" type="module"></script>
+</body>
+</html>
